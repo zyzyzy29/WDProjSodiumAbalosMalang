@@ -27,25 +27,25 @@ In the *Combinations* page we plan to have a Random Outfit Generator, this is wh
 
 ### Wireframe
 **Home page (Navigation):** 
-![Home Page](CPHomePage.png)
+![Home Page](ProposalPics/CPHomePage.png)
 
 **About us:** 
-![About Us](CPAboutUs.png)
+![About Us](ProposalPics/CPAboutUs.png)
 
 **Tops:** 
-![Tops](CPTops.png)
+![Tops](ProposalPics/CPTops.png)
 
 **Bottoms:** 
-![Bottoms](CPBottoms.png)
+![Bottoms](ProposalPics/CPBottoms.png)
 
 **Color Combinations:** 
-![Color Combinations](CPColorCombi.png)
+![Color Combinations](ProposalPics/CPColorCombi.png)
 
 **Combinations:** 
-![Combinations](CPCombi.png)
+![Combinations](ProposalPics/CPCombi.png)
 
 **Sources:** 
-![Sources](CPSources.png)
+![Sources](ProposalPics/CPSources.png)
 
 
 
