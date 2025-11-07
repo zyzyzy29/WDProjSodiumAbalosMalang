@@ -25,8 +25,27 @@ Closet Pilot is a website designed to put an end to the long hours you take in c
 ### JS description
 In the *Combinations* page we plan to have a Random Outfit Generator, this is where we’ll use JS. For the generator, specific top and bottom styles and accessories will have a designated number. The generator will then give a combination where each number is assigned a specific component for the outfit.
 
-### Wireframe (has footer)
+### Wireframe
+**Home page (Navigation):** 
+![Home Page](CPHomePage.png)
 
+**About us:** 
+![About Us](CPAboutUs.png)
+
+**Tops:** 
+![Tops](CPTops.png)
+
+**Bottoms:** 
+![Bottoms](CPBottoms.png)
+
+**Color Combinations:** 
+![Color Combinations](CPColorCombi.png)
+
+**Combinations:** 
+![Combinations](CPCombi.png)
+
+**Sources:** 
+![Sources](CPSources.png)
 
 
 
