@@ -1,0 +1,22 @@
+header{
+    font-family: 'Corinthia';
+    font-weight: 700;
+    font-size: 250%;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    background-color: #ffe1e9;
+    border-bottom: solid 7px #f2bad8;
+}
+
+body{
+    background-color: #fff9f1
+}
+
+footer{
+    font-family: 'Radley';
+    text-align: center;
+    padding: 5px;
+    background-color: #f1b7d7;
+    border-top: solid 5px #df97c2;
+}
