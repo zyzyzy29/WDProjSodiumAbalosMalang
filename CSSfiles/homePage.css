@@ -20,3 +20,9 @@ footer{
     background-color: #f1b7d7;
     border-top: solid 5px #df97c2;
 }
+
+.navi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

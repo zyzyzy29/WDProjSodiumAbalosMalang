@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 2nd Graded Exercise submitted by Anica Malang of Sodium</h2>
+
+<input id="in1" type="number" placeholder="Meal Price"> <br>
+<input id="in2" type="number" placeholder="Tip"> <br>
+<input id="in3" type="number" placeholder="Service Charge (%)">
+    
+<button onclick="totalMeal()"> Accept Input </button>
+    
+<div id="out1" >
+
+</div>
+
+    <script>
+        function totalMeal() {
+            var in1 = document.getElementById("in1");
+            var in2 = document.getElementById("in2");
+            var in3 = document.getElementById("in3");
+
+            var s1 = in1.value;
+            var s2 = in2.value;
+            var s3 = in3.value;
+
+            var mp = parseFloat(s1);
+            var tip = parseFloat(s2);
+            var sc = parseFloat(s3);
+
+            var tm = mp + tip + (sc / 100 * mp);
+            
+            document.getElementById("out1").innerHTML = "Total Meal: " + tm.toFixed(2);
+            
+        }
+    </script>
+
+<footer>
+  <p>W3Schools.com. (n.d.). 
+  <a href="https://www.w3schools.com/tags/tag_footer.asp">W3Schools Footer Tag</a> <br>
+  W3Schools.com. (n.d.). 
+  <a href="https://www.w3schools.com/jsref/jsref_tofixed.asp">W3Schools toFixed()</a> <br>
+  W3Schools.com. (n.d.). 
+  <a href="https://www.w3schools.com/jsref/jsref_parsefloat.asp">W3Schools parseFloat</a>
+  </p>
+</footer>
+
+</body>
+</html>
