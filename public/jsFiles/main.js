@@ -1,15 +1,25 @@
 document.addEventListener("keydown", function(event) {
-    // Check the value of event.key
     switch (event.key) {
-        case "n":
-        case "N":
-            // Redirect to the next page
-            window.location.href = "public/htmlFiles/tops.html";
+        case "1":
+            window.location.href = "./index.html";
             break;
-        case "p":
-        case "P":
-            // Redirect to the previous page
-            window.location.href = "bottoms.html";
+        case "2":
+            window.location.href = "/public/htmlFiles/tops.html";
+            break;
+        case "3":
+            window.location.href = "/public/htmlFiles/bottoms.html";
+            break;
+        case "4":
+            window.location.href = "/public/htmlFiles/colorCombi.html";
+            break;
+        case "5":
+            window.location.href = "/public/htmlFiles/combi.html";
+            break;
+        case "6":
+            window.location.href = "/public/htmlFiles/abtUs.html";
             break;
     }
 });
+
+
+ 
