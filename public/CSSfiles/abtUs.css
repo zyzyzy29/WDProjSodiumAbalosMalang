@@ -1,37 +1,80 @@
 header{
     text-align: center;
-    background-color: #ffe1e9;
-    border-bottom: solid 7px #f2bad8;
-    height: 150px;
+    background-color: #012965;
+    height: 140px;
     place-content: center;
 }
 
 #au{
-    font-family: 'Corinthia';
-    font-weight: 700;
-    font-size: 6em;
+    font-family: 'Racing Sans One';
+    font-weight: 600;
+    font-size: 5em;
+    color: white;
     margin: 0;
 }
 
 footer{
+    background: transparent;
     font-family: 'Radley';
     text-align: center;
-    padding: 5px;
-    background-color: #f1b7d7;
-    border-top: solid 5px #df97c2;
+    padding: 1px;
 }
 
 footer a{
     text-decoration: none;
     font-family: 'Radley';
-    color: black;
+    color: #012965;
 }
 
 footer a:hover{
-    color: #fff9f1;
+    color: white;
 }
 
 body{
-    background-image: url('../../assets/GenPics/CPbg.jpg'); 
-    background-size: 100% 100%;
+    --sbe-width: 5rem;
+}
+
+body.sbe{
+    --sbe-width: 12.5rem;
+}
+
+aside{
+    position: fixed;
+    inset: 0 auto 0 0;
+    padding: 1em;
+    width: var(--sbe-width);
+    background-color: #012965;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 0.25rem;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.9rem;
+
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+
+    transition: 
+        0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
+nav a span{
+    font-size: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sbe nav a span{
+    opacity: 1;
+    visibility: visible;
 }

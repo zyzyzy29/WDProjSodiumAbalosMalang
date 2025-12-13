@@ -1,37 +1,31 @@
 header{
     text-align: center;
-    background-color: #ffe1e9;
-    border-bottom: solid 7px #f2bad8;
-    height: 150px;
+    background-color: #012965;
+    height: 140px;
     place-content: center;
 }
 
 #c{
-    font-family: 'Corinthia';
-    font-weight: 700;
-    font-size: 6em;
+    font-family: 'Racing Sans One';
+    font-weight: 600;
+    font-size: 5em;
+    color: white;
     margin: 0;
 }
 
 footer{
+    background: transparent;
     font-family: 'Radley';
     text-align: center;
-    padding: 5px;
-    background-color: #f1b7d7;
-    border-top: solid 5px #df97c2;
+    padding: 1px;
 }
 
 footer a{
     text-decoration: none;
     font-family: 'Radley';
-    color: black;
+    color: #012965;
 }
 
 footer a:hover{
-    color: #fff9f1;
-}
-
-body{
-    background-image: url('../../assets/GenPics/CPbg.jpg'); 
-    background-size: 100% 100%;
+    color: white;
 }
