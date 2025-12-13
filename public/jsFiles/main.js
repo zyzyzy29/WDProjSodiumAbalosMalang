@@ -8,7 +8,7 @@ document.addEventListener("keydown", function(event) {
             window.location.href = "public/htmlFiles/tops.html";
             break;
         case "3":
-            window.location.href = "public/htmlFiles/bottoms.html";
+            window.location.href = "../../bottoms.html";
             break;
         case "4":
             window.location.href = "public/htmlFiles/colorCombi.html";
