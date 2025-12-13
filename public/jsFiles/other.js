@@ -1,25 +1,26 @@
+//switch pages using numbers
 document.addEventListener("keydown", function(event) {
     switch (event.key) {
         case "1":
             window.location.href = "../../index.html";
             break;
         case "2":
-            window.location.href = "htmlFiles/tops.html";
+            window.location.href = "../htmlFiles/tops.html";
             break;
         case "3":
-            window.location.href = "htmlFiles/bottoms.html";
+            window.location.href = "../htmlFiles/bottoms.html";
             break;
         case "4":
-            window.location.href = "htmlFiles/colorCombi.html";
+            window.location.href = "../htmlFiles/colorCombi.html";
             break;
         case "5":
-            window.location.href = "htmlFiles/combi.html";
+            window.location.href = "../htmlFiles/combi.html";
             break;
         case "6":
-            window.location.href = "htmlFiles/abtUs.html";
+            window.location.href = "../htmlFiles/abtUs.html";
             break;
         case "7":
-            window.location.href = "htmlFiles/sources.html";
+            window.location.href = "../htmlFiles/sources.html";
             break;
     }
 });
