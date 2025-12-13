@@ -2,7 +2,7 @@
 # Closet Pilot: Know your tops, bottoms, combinations, and more!
 
 ### Logo
-![Closet Pilot Logo](assets/GenPics/favicon.png)
+![Closet Pilot Logo](assets/GenPics/CPlogo.png)
 ### Description
 Closet Pilot is a website designed to put an end to the long hours you take in choosing your outfit. It’s a website made to unlock the full potential of your wardrobe by helping you decide what to wear. From a crop top to a baggy top, this site will help match your top of choice to an ideal pair of bottoms and vice versa. 
  It will suggest perfect color combinations whether you choose the color of bottoms or top first. It aims to give you a complete and appealing look every time. It can offer advice for the perfect accessories, shoes, ideal hairstyles and even suggestions for what type of bag you can use. It doesn’t matter if you’re getting ready for a casual day or a special event, Closet Pilot is the essential website for effortless yet perfectly coordinated outfits. 
