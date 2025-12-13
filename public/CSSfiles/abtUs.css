@@ -32,6 +32,6 @@ footer a:hover{
 }
 
 body{
-    background-image: url('/assets/GenPics/CPbg.jpg'); 
+    background-image: url('../../assets/GenPics/CPbg.jpg'); 
     background-size: 100% 100%;
 }
