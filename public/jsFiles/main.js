@@ -1,7 +1,8 @@
+//switch pages using numbers
 document.addEventListener("keydown", function(event) {
     switch (event.key) {
         case "1":
-            window.location.href = "./index.html";
+            window.location.href = "../../index.html";
             break;
         case "2":
             window.location.href = "/public/htmlFiles/tops.html";
