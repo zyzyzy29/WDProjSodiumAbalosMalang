@@ -5,22 +5,22 @@ document.addEventListener("keydown", function(event) {
             window.location.href = "../../index.html";
             break;
         case "2":
-            window.location.href = "/WDProjSodiumAbalosMalang/public/htmlFiles/tops.html";
+            window.location.href = "public/htmlFiles/tops.html";
             break;
         case "3":
-            window.location.href = "/public/htmlFiles/bottoms.html";
+            window.location.href = "public/htmlFiles/bottoms.html";
             break;
         case "4":
-            window.location.href = "/public/htmlFiles/colorCombi.html";
+            window.location.href = "public/htmlFiles/colorCombi.html";
             break;
         case "5":
-            window.location.href = "/public/htmlFiles/combi.html";
+            window.location.href = "public/htmlFiles/combi.html";
             break;
         case "6":
-            window.location.href = "/public/htmlFiles/abtUs.html";
+            window.location.href = "public/htmlFiles/abtUs.html";
             break;
         case "7":
-            window.location.href = "/public/htmlFiles/sources.html";
+            window.location.href = "public/htmlFiles/sources.html";
             break;
     }
 });
