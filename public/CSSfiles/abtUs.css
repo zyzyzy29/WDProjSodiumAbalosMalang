@@ -120,19 +120,7 @@ main{
     padding: 1rem 2rem;
 }
 
-.zy{
-    display: flex;
-    padding: 1rem;
-    text-align: center;
-    margin: 1.5rem 1.5rem 0 1.5rem;
-
-    background-color: rgba(1, 41, 101, 0.90);
-    border-radius: 15px;
-
-    color: white;
-}
-
-div{
+main.div{
     display: flex;
     padding: 1rem;
     text-align: left;
@@ -144,6 +132,6 @@ div{
     color: white;
 }
 
-div p{
+main div p{
     margin: 10px;
 }
