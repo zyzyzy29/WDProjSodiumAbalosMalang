@@ -24,3 +24,10 @@ document.addEventListener("keydown", function(event) {
             break;
     }
 });
+
+const rBtn = document.querySelector('[data-resize-btn]')
+
+rBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    document.body.classlist.toggle('sbe');
+});

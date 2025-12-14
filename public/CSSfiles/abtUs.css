@@ -41,16 +41,25 @@ body.sbe{
 aside{
     position: fixed;
     inset: 0 auto 0 0;
-    padding: 1em;
+    padding: 0.8rem;
     width: var(--sbe-width);
     background-color: #012965;
 }
 
+nav{
+    height: 100%;
+}
+
+nav li:last-child{
+    margin-top: auto;
+}
+
 nav ul{
+    height: 100%;
     list-style: none;
     display: flex;
     flex-flow: column;
-    gap: 0.25rem;
+    gap: 0.2rem;
 }
 
 nav a{
@@ -59,17 +68,23 @@ nav a{
     gap: 0.6rem;
     padding: 0.6rem 0.9rem;
 
-    font-size: 10px;
+    font-size: 0.875rem;
     color: white;
     text-decoration: none;
 
     transition: 
-        0.3s ease-in-out,
+        background-color 0.3s ease-in-out,
         color 0.3s ease-in-out;
 }
 
+nav a.active, nav a:hover, nav a:focus-visible{
+    outline: none;
+    color: #012965;
+    background-color: white;
+}
+
 nav a span{
-    font-size: 10px;
+    font-size: 0.875rem;
     opacity: 0;
     visibility: hidden;
 }
