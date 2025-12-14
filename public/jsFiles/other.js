@@ -25,9 +25,9 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-const rBtn = document.querySelector('[data-r-btn]')
+const rBtn = document.querySelector("[data-r-btn]");
 
-rBtn.addEventListener('click', function(e){
-    e.preventDefault();
-    document.body.classlist.toggle('sbe');
+rBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    document.body.classList.toggle('sbe');
 });

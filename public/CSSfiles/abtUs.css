@@ -31,7 +31,7 @@ footer a:hover{
 }
 
 body{
-    --sb-width: 5rem;
+    --sb-width: 5.5rem;
 
     background-image: url('../../assets/GenPics/CPbg.jpg');
     background-size: cover;
@@ -41,7 +41,7 @@ body{
 }
 
 body.sbe{
-    --sb-width: 12.5rem;
+    --sb-width: 13.5rem;
 }
 
 aside{
@@ -50,6 +50,8 @@ aside{
     padding: 0.8rem;
     width: var(--sb-width);
     background-color: #012965;
+
+    transition: width 0.5s ease-in-out;
 }
 
 nav{
@@ -72,9 +74,10 @@ nav a{
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0.6rem 0.9rem;
+    padding: 0.6rem 0.7rem;
 
-    font-size: 0.875rem;
+    font-size: 1.5rem;
+    line-height: 1;
     color: white;
     text-decoration: none;
 
@@ -107,4 +110,9 @@ nav a span{
 
 .sbe aside .bxs-arrow-right-stroke{
     rotate: 180deg;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem 2rem;
 }
