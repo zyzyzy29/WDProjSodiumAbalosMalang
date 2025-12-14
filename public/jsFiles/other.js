@@ -25,6 +25,7 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
+//for side bar
 const rBtn = document.querySelector("[data-r-btn]");
 
 rBtn.addEventListener("click", function(event){

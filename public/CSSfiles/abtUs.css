@@ -30,6 +30,7 @@ footer a:hover{
     color: white;
 }
 
+
 body{
     --sb-width: 5.5rem;
 
@@ -113,9 +114,36 @@ nav a span{
     rotate: 180deg;
 }
 
+
 main{
     margin-left: 5rem;
     padding: 1rem 2rem;
+}
 
-    
+#zy{
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+
+    background-color: rgba(1, 41, 101, 0.90);
+    border-radius: 15px;
+
+    color: white;
+}
+
+#ani{
+    display: flex;
+    padding: 1rem;
+    text-align: left;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+
+    background-color: rgba(1, 41, 101, 0.90);
+    border-radius: 15px;
+
+    color: white;
+}
+
+#ani p{
+    margin: 10px;
 }
