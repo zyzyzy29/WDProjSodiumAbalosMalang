@@ -117,3 +117,18 @@ main{
     margin-left: 5rem;
     padding: 1rem 2rem;
 }
+
+main div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 1rem;
+    text-align: left;
+    margin: 10.5rem 10.5rem 0 10.5rem;
+
+    background-color: rgba(1, 41, 101, 0.90);
+    border-radius: 15px;
+
+    color: rgb(246, 246, 246);
+}
