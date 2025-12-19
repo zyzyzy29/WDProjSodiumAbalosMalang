@@ -142,7 +142,7 @@ main{
     border: 3px solid rgba(55, 81, 116, 0.85);
     border-radius: 10px;
 
-    display: flex;
+    place-items: center;
 }
 
 .topImg{
