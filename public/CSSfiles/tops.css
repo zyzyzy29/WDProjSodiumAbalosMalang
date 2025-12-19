@@ -124,7 +124,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5px;
 
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     margin: 100px 2px 100px 2px;
 }
