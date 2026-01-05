@@ -1,4 +1,21 @@
 # WDProjSodiumAbalosMalang
+
+# 3rd Quarter Update
+## Closet Pilot (final title)
+## 2 Sectence Description
+Closet Pilot is a website made to unlock the full potential of your wardrobe by helping you decide what to wear. It will help match your top of choice to an ideal pair of bottoms and vice versa, suggest the perfect color combinations, and even help you generate an outfit!
+
+## Features (min 3)
+1. Random Outfit Generator
+2. Easy navigation (side bar and number navigation)
+
+## Details 
+basically how the important stuff work
+## Definition of done
+The website is done when all pages are working (and look nice) and the random outfit generator works and makes sense.
+
+---
+
 # Closet Pilot: Know your tops, bottoms, combinations, and more!
 
 ### Logo
