@@ -8,6 +8,8 @@ Closet Pilot is a website made to unlock the full potential of your wardrobe by 
 ## Features (min 3)
 1. Random Outfit Generator
 2. Easy navigation (side bar and number navigation)
+3. Suggestions form
+4. Photo booth (if time allows)
 
 ## Details 
 The random outfit generator will work like this:
@@ -18,6 +20,9 @@ The random outfit generator will work like this:
 
 ## Definition of done
 The website is done when all pages are working (and look nice) and the random outfit generator works and makes sense.
+
+## How forms will be incorporated
+A suggestions page will be added for other tops/outfits/color combinations that weren't included in the original set of information.
 
 ---
 
