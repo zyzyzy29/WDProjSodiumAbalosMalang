@@ -40,6 +40,8 @@ body{
     background-position: center;
 }
 
+/* start of side bar css */
+
 body.sbe{
     --sb-width: 13.5rem;
 }
@@ -113,6 +115,8 @@ nav a span{
 .sbe aside .bxs-arrow-right-stroke{
     rotate: 180deg;
 }
+
+/* start of main content */
 
 main{
     margin-left: 5rem;
