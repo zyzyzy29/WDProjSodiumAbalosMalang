@@ -20,6 +20,9 @@ document.addEventListener("keydown", function(event) {
             window.location.href = "public/htmlFiles/abtUs.html";
             break;
         case "7":
+            window.location.href = "public/htmlFiles/contUs.html";
+            break;
+        case "8":
             window.location.href = "public/htmlFiles/sources.html";
             break;
     }
