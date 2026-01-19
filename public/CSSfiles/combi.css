@@ -40,6 +40,8 @@ body{
     background-position: center;
 }
 
+/* start of side bar css */
+
 body.sbe{
     --sb-width: 13.5rem;
 }
@@ -114,7 +116,35 @@ nav a span{
     rotate: 180deg;
 }
 
+/* start of main content */
+
 main{
     margin-left: 5rem;
     padding: 1rem 2rem;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5px;
+
+    padding: 5px;
+    text-align: center;
+    margin: 50px 2px 100px 2px;
+}
+
+.blocks{
+    margin: 20px 35px;
+    padding: 20px;
+    background-color: rgba(1, 41, 101, 0.85);
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Onest';
+    font-size: 1em;
+
+    border: 3px solid rgba(55, 81, 116, 0.85);
+    border-radius: 10px;
+
+    place-items: center;
 }
