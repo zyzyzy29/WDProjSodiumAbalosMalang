@@ -83,11 +83,73 @@
     </aside>
 
     <main>
+        <form method="post" action="submit" onsubmit="return sub()" onreset="return res()" id="G2">
+            <fieldset>
+                <legend class="leg">Personal Information</legend>
 
+                <label for="fname">Full name:</label><br>
+                <input class="txt" onblur="blurF(this)" type="text" id="fname" name="fname" required><br>
+
+                <label for="dc">Discord Username (Optional):</label><br>
+                <input class="txt" onblur="blurF(this)" type="text" id="dc" name="dc"><br>
+
+                <label for="em">Email address (Optional):</label><br>
+                <input type="email" id="em" name="em"><br>
+            </fieldset> <br>
+
+            <fieldset>
+                <legend class="leg">Suggestion</legend>
+
+                <label for="sbj">Subject:</label><br>
+                <input class="txt" onblur="blurF(this)" type="text" id="sbj" name="sbj" required><br>
+
+                <label for="q">Message:</label><br>
+                <textarea class="txt" onblur="blurF(this)" id="m" name="m" required></textarea><br>
+                </fieldset><br>
+
+            <div id="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
     </main>
     <footer>
         <p> &copy; Closet Pilot 2025 | <a href="sources.html">Sources</a></p>
     </footer>
-    <script src="../jsFiles/other.js"> </script>
+
+    <script src="../jsFiles/other.js"> 
+        function blurF(thisElement){
+            var text = thisElement.value;
+            if(text === ""){
+                thisElement.style.border = "none";
+                thisElement.style.outline = "#dd655f solid 1.5px";
+                thisElement.style.borderRadius = "5px";
+
+            }
+            else{
+                thisElement.style.border = "none";
+                thisElement.style.outline = "lightgrey solid 1px";
+                thisElement.style.borderRadius = "5px";
+            }
+        }
+
+        function sub(){
+            if(confirm('Confirm submission?')){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        function res(){
+            if(confirm('Confirm reset of information?')){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    </script>
     </body>
     </html>
