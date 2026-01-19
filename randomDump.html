@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<!-- <body>
 
     <h2> Q1 2nd Graded Exercise submitted by Anica Malang of Sodium</h2>
 
@@ -43,7 +43,71 @@
   W3Schools.com. (n.d.). 
   <a href="https://www.w3schools.com/jsref/jsref_parsefloat.asp">W3Schools parseFloat</a>
   </p>
-</footer>
+</footer> 
 
-</body>
+</body> -->
+<h1 id = "head"> Anica Malang || 9 - Sodium || SY 2025-2026 </h1>
+
+    <div class = "container">
+        <div class = "item">
+
+          <div class = "game">
+            <h1>Type the letter: </h1> <br>
+            <h1 id = "ltr"></h1> <br>
+          </div>
+
+            <p id = "rw"></p>
+            <h3>Key pressed: </h3>
+            <p id = "kp"></p>
+
+          <div class = "scr">
+            <h1>Score: </h1>
+            <p id = "score"></p>
+          </div>
+
+        </div>
+    </div>
+
+    <footer> thank you to carly and erin for helping me out :D </footer>
+    <footer>&copy; Anica Malang. All Rights Reserved.</footer>
+
+<script>
+  var score = 0;
+  const letters = [
+    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
+
+  function randLetter() {
+    const ind = Math.floor(Math.random() * letters.length);
+    return letters[ind];
+  }
+
+  function newLetter() {
+    const letterId = document.getElementById('ltr');
+    letterId.textContent = randLetter(); 
+  }
+
+  document.addEventListener('keydown', function(event) {
+    const dispLtr = document.getElementById('ltr').textContent;
+      if (event.key.toUpperCase() === dispLtr) {
+
+        score++;
+
+        document.getElementById('rw').textContent = " ✅Correct !";
+
+        document.getElementById('kp').textContent = event.key.toUpperCase();
+
+        document.getElementById('score').textContent = score;
+        newLetter();
+      }
+
+      else {
+        document.getElementById('rw').textContent = " ❌Try Again !";
+        document.getElementById('kp').textContent = event.key.toUpperCase();
+    }
+  });
+
+  newLetter();
+
+</script>
+
 </html>
