@@ -139,6 +139,17 @@ main{
     font-family: 'Onest';
     font-size: 1em;
 
-    border: 3px solid rgba(168, 176, 188, 0.85);
+    border: 3px solid rgba(55, 81, 116, 0.85);
     border-radius: 10px;
+
+    place-items: center;
+}
+
+.topImg{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+
+    width: 100px;
+    height: auto;
 }

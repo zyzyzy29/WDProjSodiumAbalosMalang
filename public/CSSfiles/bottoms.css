@@ -140,4 +140,15 @@ main{
 
     border: 3px solid rgba(168, 176, 188, 0.85);
     border-radius: 10px;
+
+    place-items: center;
+}
+
+.botImg{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+
+    width: 100px;
+    height: auto;
 }
