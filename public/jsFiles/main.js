@@ -13,15 +13,15 @@ document.addEventListener("keydown", function(event) {
         case "4":
             window.location.href = "public/htmlFiles/colorCombi.html";
             break;
-        case "5":
+        /* case "5":
             window.location.href = "public/htmlFiles/combi.html";
-            break;
+            break; */
         case "6":
             window.location.href = "public/htmlFiles/abtUs.html";
             break;
-        case "7":
+        /* case "7":
             window.location.href = "public/htmlFiles/contUs.html";
-            break;
+            break; */
         case "8":
             window.location.href = "public/htmlFiles/sources.html";
             break;
