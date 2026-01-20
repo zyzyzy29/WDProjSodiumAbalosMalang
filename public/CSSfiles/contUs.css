@@ -15,11 +15,22 @@ form{
     float: left;
     width: 300px;
     margin-left: 4.5rem;
-    margin-top: 4.5rem;
+    margin-top: 2rem;
     padding: 20px;
     background-color: rgba(1, 41, 101, 0.85);
     color: white;
     border-radius: 15px;
     font-family: 'Onest';
     font-size: large;
+}
+
+main p{
+    display: flex;
+    width: 400px;
+    font-family: 'Onest';
+    font-size: medium;
+    color: white;
+    margin: 10px auto 10px auto;
+    padding: 30px;
+    background-color: rgba(1, 41, 101, 0.85);
 }
