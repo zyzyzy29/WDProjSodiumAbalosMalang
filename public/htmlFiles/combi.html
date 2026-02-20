@@ -83,69 +83,36 @@
     </aside>
 
     <main>
-        <div class = mainGrid>
-            <div class = blocks id = rog>
-                <h4>
-                    Random Outfit Generator
-                </h4>
+            <div class = "mainGrid">
+                <div class="blocks" id="rog">
+                    <h2>Completely Random Outfit Generator</h2>
 
-                <button onclick="generate()">Generate</button>
+                    <button onclick="generate()">Generate</button> <br>
 
-                
+                    <p id = top class="rog"></p>
+                    <p id = btm class="rog"></p>
+
+                </div>
+                <div class = "blocks">
+                    <h2>Random Bottom Generator</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class = "blocks">
+                    <h2>Random Top Generator</h2>
+                    <p>
+                        
+                    </p>
+                </div>
             </div>
-            <div class = blocks>
-                <p>
-                    yo
-                </p>
-            </div>
-            <div class = blocks>
-                <p>
-                    wsg
-                </p>
-            </div>
-        </div>
     </main>
 
     <footer>
         <p> &copy; Closet Pilot 2025 | <a href="sources.html">Sources</a></p>
         
     </footer>
-    <script src="../jsFiles/other.js">
-
-        function generate(){
-            var NT = Math.floor(Math.random() * 12) + 1;
-
-            while(check != 1){
-                var NB = Math.floor(Math.random() * 12) + 1;
-
-                if(matches[NT-1].includes(NB)){
-                    var outfit = "Top " + NT + " and Bottom " + NB;
-                    console.log(outfit);
-                    check++;
-                    break;
-                }
-            }  
-
-            console.log(NT);
-
-            let matches = {
-                1: [1, 2, 3, 7, 8, 9, 10], 
-                2: [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
-                3: [1, 2, 3, 4, 6, 7, 10, 12],
-                4: [1, 3, 4, 6, 10, 12],
-                5: [1, 3, 4, 6, 7, 10, 11, 12],
-                6: [1, 2, 3, 4, 6, 7, 8, 9, 10],
-                7: [1, 3, 4, 6, 10, 11, 12],
-                8: [1, 2, 3, 4, 7, 10, 12],
-                9: [1, 2, 3, 5, 7, 10],
-                10: [1, 2, 3, 5, 6, 7, 10],
-                11: [1, 2, 3, 5, 6, 7, 10],
-                12: [1, 3, 5, 7, 10]
-            }
-        }
-
-
-    </script>
+    <script src="../jsFiles/rog.js"></script>
     
 </body>
 </html>

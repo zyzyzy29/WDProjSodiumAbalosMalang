@@ -36,3 +36,15 @@ main{
 
     place-items: center;
 }
+
+button{
+    padding: 10px;
+    background-color: rgb(240, 242, 255);
+
+    color: rgb(1, 41, 101);
+    text-decoration: none;
+    font-family: 'Onest';
+    font-size: larger;
+
+    border-radius: 10px;
+}
