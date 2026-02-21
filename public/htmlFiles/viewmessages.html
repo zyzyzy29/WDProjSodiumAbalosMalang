@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/GenPics/CPlogo.png">
+    <title>View Suggestions | Closet Pilot</title>
+    
+    <link rel="stylesheet" type="text/css" href="../CSSfiles/main.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Onest:wght@100..900&family=Radley&display=swap" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .view-container {
+            margin-top: 2rem;
+            padding: 30px;
+            background-color: rgba(1, 41, 101, 0.85); 
+            border-radius: 15px;
+            color: white;
+            font-family: 'Onest', sans-serif;
+            width: 90%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1#view-title {
+            font-family: 'Racing Sans One';
+            font-size: 4em;
+            color: #012965;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            border-bottom: 2px solid white;
+            padding: 12px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+       
+        main {
+            margin-left: var(--sb-width);
+            transition: margin-left 0.5s ease-in-out;
+            padding: 2rem;
+        }
+
+    
+        .btn-style {
+            display: inline-block;
+            text-decoration: none !important;
+            font-family: Arial, sans-serif; 
+            font-size: 13.33px; 
+            color: black !important;
+            
+            padding: 3px 10px;
+            border: 1px solid #767676;
+            border-radius: 2px;
+            
+    
+            background: #efefef;
+            background: linear-gradient(to bottom, #ffffff 0%, #e1e1e1 100%);
+            
+            margin-top: 10px;
+            cursor: default;
+        }
+
+        .btn-style:hover {
+            background: linear-gradient(to bottom, #e1e1e1 0%, #cccccc 100%);
+            border-color: #4f4f4f;
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body class="">
+    <header>
+        <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: right; height: 3em; width: 3em">
+        <p id="cu" style="font-family: 'Racing Sans One'; font-size: 5em; color: white; text-align: center; margin: 0;"> Closet Pilot </p>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><i class='bx bxs-home-alt'></i> <span>Home Page</span></a></li>
+                <li><a href="tops.html"><i class='bx bxs-t-shirt'></i> <span>Tops</span></a></li>
+                <li><a href="bottoms.html"><i class='bx bxs-pant'></i> <span>Bottoms</span></a></li>
+                <li><a href="colorCombi.html"><i class='bx bxs-color-wheel'></i> <span>Color Combinations</span></a></li>
+                <li><a href="combi.html"><i class='bx bxs-shape-intersect-alt'></i> <span>Combinations</span></a></li>
+                <li><a href="abtUs.html"><i class='bx bxs-heart-circle'></i> <span>About Us</span></a></li>
+                <li><a href="contUs.html" class="active"><i class='bx bx-contact-book'></i> <span>Contact Us</span></a></li>
+                <li><a href="sources.html"><i class='bx bxs-article'></i> <span>Sources</span></a></li>
+                <li><a href="" data-r-btn><i class='bx bxs-arrow-right-stroke'></i> <span>Collapse</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="view-container">
+            <div class="top-bar">
+                <p id="totalCount">Total Suggestions: 0</p>
+            </div>
+            
+            <a href="contUs.html" class="btn-style">Back to Form</a>
+
+            <div id="tableContainer"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy; Closet Pilot 2025 | <a href="sources.html">Sources</a></p>
+    </footer>
+
+    <script src="../jsFiles/other.js"></script>
+    <script>
+        function displayData() {
+            const container = document.getElementById('tableContainer');
+            const totalText = document.getElementById('totalCount');
+            const rawData = localStorage.getItem('suggestionsData');
+
+            if (!rawData || JSON.parse(rawData).length === 0) {
+                container.innerHTML = "<p style='text-align: center; padding: 20px;'>No suggestions found.</p>";
+                totalText.innerText = "Total Suggestions: 0";
+                return;
+            }
+
+            let suggestions = JSON.parse(rawData);
+            totalText.innerText = `Total Suggestions: ${suggestions.length}`;
+
+            let html = `<table>
+                <tr>
+                    <th>Date</th>
+                    <th>Full Name</th>
+                    <th>Discord</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                </tr>`;
+
+            suggestions.forEach(item => {
+                html += `<tr>
+                    <td>${item.date}</td>
+                    <td>${item.fullName}</td>
+                    <td>${item.discord}</td>
+                    <td>${item.email}</td>
+                    <td>${item.subject}</td>
+                    <td>${item.message}</td>
+                </tr>`;
+            });
+
+            html += `</table>`;
+            container.innerHTML = html;
+        }
+        window.onload = displayData;
+    </script>
+</body>
+</html>

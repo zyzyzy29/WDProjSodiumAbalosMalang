@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,33 +84,32 @@
     </aside>
 
     <main>
-        <form method="post" action="submit" onsubmit="return sub()" onreset="return res()">
+         <form id="suggestionForm" onsubmit="sub(event)" onreset="return res()">
             <fieldset>
                 <legend class="leg">Personal Information</legend>
-
                 <label for="fname">Full name:</label><br>
-                <input class="txt" onblur="blurF(this)" type="text" id="fname" name="fname" required><br>
+                <input class="txt" onblur="blurF(this)" type="text" id="fname" required><br>
 
                 <label for="dc">Discord Username (Optional):</label><br>
-                <input class="txt" onblur="blurF(this)" type="text" id="dc" name="dc"><br>
+                <input class="txt" onblur="blurF(this)" type="text" id="dc"><br>
 
                 <label for="em">Email address (Optional):</label><br>
-                <input type="email" id="em" name="em"><br>
+                <input type="email" id="em"><br>
             </fieldset> <br>
 
             <fieldset>
                 <legend class="leg">Suggestion</legend>
-
                 <label for="sbj">Subject:</label><br>
-                <input class="txt" onblur="blurF(this)" type="text" id="sbj" name="sbj" required><br>
+                <input class="txt" onblur="blurF(this)" type="text" id="sbj" required><br>
 
-                <label for="q">Message:</label><br>
-                <textarea class="txt" onblur="blurF(this)" id="m" name="m" required></textarea><br>
-                </fieldset><br>
+                <label for="m">Message:</label><br>
+                <textarea class="txt" onblur="blurF(this)" id="m" required></textarea><br>
+            </fieldset><br>
 
             <div id="buttons">
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
+                <a href="viewmessages.html" class="btn-style">View Signups</a>
             </div>
         </form>
 

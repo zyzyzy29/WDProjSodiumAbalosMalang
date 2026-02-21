@@ -35,3 +35,32 @@ rBtn.addEventListener("click", function(event){
     event.preventDefault();
     document.body.classList.toggle('sbe');
 });
+function sub(event) {
+    // 1. Prevents the 405 error and page reload
+    event.preventDefault(); 
+
+    // 2. Confirmation dialog
+    if(!confirm('Confirm submission?')){
+        return false;
+    }
+
+    // 3. Get values (Make sure these IDs match your HTML exactly)
+    const newSuggestion = {
+        fullName: document.getElementById('fname').value,
+        discord: document.getElementById('dc').value || "N/A",
+        email: document.getElementById('em').value || "N/A",
+        subject: document.getElementById('sbj').value,
+        message: document.getElementById('m').value,
+        date: new Date().toLocaleDateString()
+    };
+
+    // 4. Save logic
+    let suggestions = JSON.parse(localStorage.getItem('suggestionsData')) || [];
+    suggestions.push(newSuggestion);
+    localStorage.setItem('suggestionsData', JSON.stringify(suggestions));
+
+    alert("Suggestion Saved!");
+    
+    // 5. Reset form and stay on page
+    document.getElementById('suggestionForm').reset();
+}
