@@ -84,21 +84,54 @@ let picsB = [
 
 
 function generate(){
-            var NT = Math.floor(Math.random() * 12) + 1;
-            var check = 0;
+    var CT = Math.floor(Math.random() * 12) + 1;
+    var check = 0;
 
-            while(check != 1){
-                var NB = Math.floor(Math.random() * 12) + 1;
+    while(check != 1){
+        var CB = Math.floor(Math.random() * 12) + 1;
 
-                let key = NT;
-                var rah = matches[NT];
-                if(rah.indexOf(NB) !== -1){
-                    document.getElementById("top").innerHTML = "<img src='" + picsT[NT-1] + "' alt='Top'>";
-                    document.getElementById("btm").innerHTML = "<img src='" + picsB[NB-1] + "' alt='Bottom'>";
-                    check++;
-                    break;
-                }
+        var rah = matches[CT];
+        if(rah.indexOf(CB) !== -1){
+            document.getElementById("top").innerHTML = "<img src='" + picsT[CT-1] + "' alt='Top'>";
+            document.getElementById("btm").innerHTML = "<img src='" + picsB[CB-1] + "' alt='Bottom'>";
+            check++;
+            break;
+        }
                 
-            }  
+    }  
             
+}
+
+function genBttm(){
+    var FT = 0;
+
+    while(check != 1){
+        var RB = Math.floor(Math.random() * 12) + 1;
+
+        var rah = matches[FT];
+        if(rah.indexOf(RB) !== -1){
+            document.getElementById("top").innerHTML = "<img src='" + picsT[FT-1] + "' alt='Top'>";
+            document.getElementById("btm").innerHTML = "<img src='" + picsB[RB-1] + "' alt='Bottom'>";
+            check++;
+            break;
+        }
+                
+    }  
+}
+
+function genTop(){
+    var FB = 0;
+
+    while(check != 1){
+        var RT = Math.floor(Math.random() * 12) + 1;
+
+        var rah = matches[FB];
+        if(rah.indexOf(RT) !== -1){
+            document.getElementById("top").innerHTML = "<img src='" + picsT[FB-1] + "' alt='Top'>";
+            document.getElementById("btm").innerHTML = "<img src='" + picsB[RT-1] + "' alt='Bottom'>";
+            check++;
+            break;
+        }
+                
+    }  
 }
