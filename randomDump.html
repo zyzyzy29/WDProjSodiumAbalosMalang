@@ -48,6 +48,7 @@
 </body> -->
 
 <!-- TYPING TEST-->
+ <!--
 <h1 id = "head"> Anica Malang || 9 - Sodium || SY 2025-2026 </h1>
 
     <div class = "container">
@@ -111,8 +112,10 @@
   newLetter();
 
 </script>
+-->
 
 <!-- form (edited) -->
+<!--
 <form method="post" action="submit" onsubmit="return sub()" onreset="return res()" id="G2">
     <fieldset>
         <legend class="leg">Personal Information</legend>
@@ -180,5 +183,141 @@
     }
 
 </script>
+-->
+
+<!-- form view sign ups-->
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Sign Ups</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<h1>List of Students That Have Signed Up</h1>
+<style>
+    h1{
+        text-align: center;
+    }
+
+    html{
+        font-family: "Lexend";
+        font-size: larger;
+        background-color: #f3eefc;
+    }
+
+    #bsf{
+        justify-content: center;
+        font-size: medium; 
+        background-color: #c9c8ff; 
+        
+        border: none; 
+        border-radius: 5px;
+    }
+
+    select{
+        width: 150px;
+        height: 30px;
+        margin: 2px 0 0 0;
+        font-family: "Lexend";
+        font-size: medium;
+        box-sizing: border-box;
+        background-color: white;;
+    }
+
+    table{
+        width: 90%;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #9784cc;
+    }
+
+    th, td{
+        border: 1px solid #9784cc;
+        padding: 8px;
+    }
+
+    thead{
+        background-color: rgb(94, 71, 115);
+        color: white;
+    }
+</style>
+
+<body>
+    <button id="bsf" onclick="window.location.href='Q3_2GSodiumMalang.html'">Back to Sign Up Form</button><br>
+
+    <label for="filter">Filter by Club:</label>
+    <select id="filter" onchange="clubDisplay()">
+        <option value="AC">All Clubs</option>
+        <option value="Aksis">Aksis</option>
+        <option value="Alianti">Alianti</option>
+        <option value="Math Club">Math Club</option>
+        <option value="Pallastro">Pallastro</option>
+        <option value="Pisay.XYZ">Pisay.XYZ</option>
+        <option value="Sagala">Sagala</option>
+    </select> <br><br>
+    <ul id="signUpList"></ul>
+
+    <p id="suCount"></p>
+    <p id="empty">No sign ups found for selected club.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Club</th>
+                <th>Student ID</th>
+                <th>Full Name</th>
+                <th>Grade Level</th>
+                <th>Email Adress</th>
+                <th>Mobile Phone Number</th>
+                <th>Intern/Extern</th>
+            </tr>
+        </thead>
+        <tbody id="cTable"></tbody>
+    </table>
+
+    <script>
+        function clubDisplay(){
+            let info = JSON.parse(localStorage.getItem('cform')) || [];
+
+            const filter = document.getElementById('filter').value;
+            const table = document.getElementById('cTable');
+
+            cTable.innerHTML = "";
+            for(let i = 0; i < info.length; i++){
+                let data = info[i];
+
+                if(filter === "AC" || info[i].club === filter){
+
+                    cTable.innerHTML += `
+                    <tr>
+                        <td>${data.club}</td>
+                        <td>${data.SId}</td>
+                        <td>${data.name}</td>
+                        <td>${data.grade}</td>
+                        <td>${data.em}</td>
+                        <td>${data.phoneNo}</td>
+                        <td>${data.inex}</td>
+                    </tr>`;
+                }
+            }
+
+            document.getElementById('suCount').innerText = "Total Sign Ups: " + cTable.rows.length;
+            
+            if(cTable.rows.length === 0){
+                document.getElementById('empty').style.display = "block";
+            }
+            else{
+                document.getElementById('empty').style.display = "none";
+            }
+        }
+
+        clubDisplay();
+    </script>
+
+</body>
+
+</html>
 
 </html>

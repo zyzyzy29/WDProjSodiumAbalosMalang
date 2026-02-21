@@ -39,12 +39,24 @@ main{
 
 button{
     padding: 10px;
-    background-color: rgb(240, 242, 255);
+    background-color: rgb(242, 243, 249);
 
     color: rgb(1, 41, 101);
     text-decoration: none;
     font-family: 'Onest';
-    font-size: larger;
+    font-size: large;
+
+    border-radius: 10px;
+}
+
+select{
+    padding: 10px;
+    background-color: rgb(242, 243, 249);
+
+    color: rgb(1, 41, 101);
+    text-decoration: none;
+    font-family: 'Onest';
+    font-size: large;
 
     border-radius: 10px;
 }

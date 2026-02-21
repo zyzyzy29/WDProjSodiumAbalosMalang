@@ -89,23 +89,56 @@
 
                     <button onclick="generate()">Generate</button> <br>
 
-                    <p id = top class="rog"></p>
-                    <p id = btm class="rog"></p>
+                    <p id = CRtop class="rog"></p>
+                    <p id = CRbtm class="rog"></p>
 
                 </div>
                 <div class = "blocks">
                     <h2>Random Bottom Generator</h2>
 
-                    <button onclick="generate()">Generate</button> <br>
-                    
-                    <p>
-                    </p>
+                    <select id="chooseT">
+                        <option value="1">Baby Doll</option>
+                        <option value="2">Tank</option>
+                        <option value="3">Baby T</option>
+                        <option value="4">Crop</option>
+                        <option value="5">Baggy</option>
+                        <option value="6">Tube</option>
+                        <option value="7">Off The Shoulder</option>
+                        <option value="8">Long Sleeve</option>
+                        <option value="9">Fitted Long Sleeve Button Up</option>
+                        <option value="10">Button Up</option>
+                        <option value="11">Polo</option>
+                        <option value="12">Baggy Long Sleeve Button Up</option>
+                    </select> <br> <br>
+
+                    <button onclick="genBttm()">Generate Bottom</button> <br>
+
+                    <p id="Ftop"></p>
+                    <p id="Rbtm"></p>
                 </div>
                 <div class = "blocks">
                     <h2>Random Top Generator</h2>
-                    <p>
-                        
-                    </p>
+
+                    <select id="chooseB">
+                        <option value="1">Baggy Jeans</option>
+                        <option value="2">Flared</option>
+                        <option value="3">Wide Leg</option>
+                        <option value="4">Sweat Pants</option>
+                        <option value="5">Dress Pants</option>
+                        <option value="6">Jorts</option>
+                        <option value="7">Jean Mini Skirt</option>
+                        <option value="8">Mini Skirt</option>
+                        <option value="9">Long Flowy Skirt</option>
+                        <option value="10">Jean Shorts</option>
+                        <option value="11">Shorts</option>
+                        <option value="12">Tight Shorts</option>
+                    </select> <br> <br>
+
+                    <button onclick="genTop()">Generate Top</button> <br>
+
+                    <p id="Rtop"></p>
+                    <p id="Fbtm"></p>
+
                 </div>
             </div>
     </main>
