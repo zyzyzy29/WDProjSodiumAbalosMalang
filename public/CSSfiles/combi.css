@@ -60,3 +60,10 @@ select{
 
     border-radius: 10px;
 }
+
+@media (max-width: 600px){
+    .mainGrid{
+        display: flex;
+        flex-direction: column;
+    }
+}

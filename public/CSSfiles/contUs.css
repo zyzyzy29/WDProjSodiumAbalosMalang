@@ -13,7 +13,7 @@ main{
 
 form{
     float: left;
-    width: 300px;
+    width: 40%;
     margin-left: 4.5rem;
     margin-top: 2rem;
     padding: 20px;
@@ -33,4 +33,18 @@ main p{
     margin: 10px auto 10px auto;
     padding: 30px;
     background-color: rgba(1, 41, 101, 0.85);
+    border-radius: 5px;
+}
+
+@media (max-width: 600px){
+    form{
+        float: none;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    main p{
+        width: 90%;
+        margin: 10px auto;
+    }
 }

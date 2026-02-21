@@ -28,3 +28,23 @@ main div{
 main div p{
     margin: 10px;
 }
+
+#anii, #zyy{
+    width: 15%;
+    height: auto;
+    float: left;
+    margin: 5px;
+}
+
+@media (max-width: 600px){
+    main div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #anii, #zyy{
+        width: 100%;
+        height: 95%;
+        margin: 5px;
+    }
+}
