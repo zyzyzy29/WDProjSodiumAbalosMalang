@@ -7,14 +7,16 @@
 }
 
 main{
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
 }
 
 form{
-    float: left;
-    width: 40%;
-    margin-left: 4.5rem;
-    margin-top: 2rem;
+    width: 100%;
+    margin-left: 2rem;
     padding: 20px;
     background-color: rgba(1, 41, 101, 0.85);
     color: white;
@@ -23,28 +25,28 @@ form{
     font-size: large;
 }
 
-main p{
+#info{
     display: flex;
+    flex-direction: column;
     width: 400px;
     font-family: 'Onest';
     font-size: medium;
     color: white;
-    margin: 10px auto 10px auto;
+    margin: auto;
     padding: 30px;
     background-color: rgba(1, 41, 101, 0.85);
     border-radius: 5px;
 }
 
 @media (max-width: 600px){
-    form{
-        float: none;
-        width: 90%;
-        margin: 2rem auto;
+    main{
+        display: flex;
+        flex-direction: column;
     }
 
-    main p{
+    form{
         width: 90%;
-        margin: 10px auto;
+        margin: 10px auto 0 auto;
     }
 }
 

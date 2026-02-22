@@ -10,10 +10,6 @@
     min-width: 60%;
 }
 
-.sbe .view-container {
-    margin-left: 14rem;
-}
-
 h1 {
     font-family: 'Racing Sans One';
     color: #012965;
@@ -45,13 +41,5 @@ td {
         margin-top: 1rem;
         padding: 20px;
         width: 100%;
-    }
-
-    .sbe .view-container {
-        margin-left: 1rem;
-    }
-
-    h1 {
-        font-size: 2.5em;
     }
 }
