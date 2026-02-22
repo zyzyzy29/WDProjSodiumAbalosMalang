@@ -28,13 +28,15 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-//for side bar
-const rBtn = document.querySelector("[data-r-btn]");
+//for hamburger menu button
+const ham = document.querySelector('.ham');
+    const offScreen = document.querySelector('.offScreen');
 
-rBtn.addEventListener("click", function(event){
-    event.preventDefault();
-    document.body.classList.toggle('sbe');
-});
+    ham.addEventListener('click', () => {
+        ham.classList.toggle('active');
+        offScreen.classList.toggle('active');
+    });
+
 function sub(event) {
     // 1. Prevents the 405 error and page reload
     event.preventDefault(); 

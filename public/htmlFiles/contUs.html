@@ -18,13 +18,10 @@
 
 <body class="">
     <header>
-        <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: right; height: 3em; width: 3em">
-        <p id = "cu" >Contact Us</p>
-    </header>
+        <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: left; height: 3em; width: 3em">
 
-    <aside>
-        <nav>
-            <ul>
+        <div class="offScreen">
+            <ul class="list">
                 <li>
                     <a href="../../index.html">
                         <i class='bx  bxs-home-alt'></i> 
@@ -73,15 +70,18 @@
                         <span>Sources</span>
                     </a>
                 </li>
-                <li>
-                    <a href= "" data-r-btn>
-                        <i class='bx  bxs-arrow-right-stroke'></i> 
-                        <span>Collapse</span>
-                    </a>
-                </li>
             </ul>
-        </nav>
-    </aside>
+    </div>
+    <nav>
+        <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+        <p id = "cu" >Contact Us</p>
+    </header>
 
     <main>
          <form id="suggestionForm" onsubmit="sub(event)" onreset="return res()">
@@ -109,7 +109,7 @@
             <div id="buttons">
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
-                <a href="viewmessages.html" class="btn-style">View Signups</a>
+                <a href="viewmessages.html" class="btn-style">View Suggestions</a>
             </div>
         </form>
 

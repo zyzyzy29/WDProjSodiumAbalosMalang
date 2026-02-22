@@ -60,7 +60,7 @@ footer a:hover{
     text-align: center;
     width: 80%;
     margin: 0 auto 10px auto;
-    }
+}
 
 @media (max-width: 600px) {
     
@@ -70,8 +70,6 @@ footer a:hover{
     }
     
 }
-
-
 
 #main a {
     margin: 10px 10px 0 5px;

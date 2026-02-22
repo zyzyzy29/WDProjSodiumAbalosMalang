@@ -28,14 +28,16 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-//for side bar
-const rBtn = document.querySelector("[data-r-btn]");
+//for hamburger menu button
+const ham = document.querySelector('.ham');
+    const offScreen = document.querySelector('.offScreen');
 
-rBtn.addEventListener("click", function(event){
-    event.preventDefault();
-    document.body.classList.toggle('sbe');
-});
+    ham.addEventListener('click', () => {
+        ham.classList.toggle('active');
+        offScreen.classList.toggle('active');
+    });
 
+//for random generators
 let matchFromTop = {
     1: [1, 2, 3, 7, 9, 10], 
     2: [1, 2, 3, 4, 6, 7, 9, 10, 11, 12],
