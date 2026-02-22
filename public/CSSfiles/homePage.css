@@ -109,5 +109,9 @@ footer a:hover{
         flex-direction: column;
         font-size: 75%;
     }
+
+    #welcome{
+        font-size: 3.5em;
+    }
     
 }

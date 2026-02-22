@@ -46,4 +46,8 @@ main div p{
         height: 95%;
         margin: 5px;
     }
+
+    #au{
+        font-size: 3.5em;
+    }
 }

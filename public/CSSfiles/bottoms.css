@@ -70,4 +70,8 @@ button{
         display: flex;
         flex-direction: column;
     }
+
+    #bm{
+        font-size: 4em;
+    }
 }

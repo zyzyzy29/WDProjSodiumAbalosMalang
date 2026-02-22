@@ -48,6 +48,10 @@ form{
         width: 90%;
         margin: 10px auto 0 auto;
     }
+
+    #cu{
+        font-size: 3.5em;
+    }
 }
 
 

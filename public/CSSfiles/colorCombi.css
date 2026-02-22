@@ -43,4 +43,8 @@ main{
         display: flex;
         flex-direction: column;
     }
+
+    #cc{
+        font-size: 3.5em;
+    }
 }

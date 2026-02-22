@@ -65,4 +65,8 @@ select{
         display: flex;
         flex-direction: column;
     }
+
+    #c{
+        font-size: 3.5em;
+    }
 }
