@@ -25,7 +25,7 @@ This project <u>doesn't CURRENTLY</u> include (but might):
 - a COMPLETE list of outfit types
 
 ## License
-Proprietary/Commercial License
+Permissive License
 
 ## KHub Requirements
 The data saved in localStorage will be used to help make our website better (since it's a suggestion form).
@@ -34,7 +34,7 @@ Wireframe for the suggestions page:
 ![Suggestions](assets/ProposalPics/CPSugg.png)
 
 
-##### Submitted by Zy Abalos & Anica Malang on -- to Sir Roy Canseco in partial fulfillment of the requirements of CS 3 of DOST PSHS-MC.
+##### Submitted by Zy Abalos & Anica Malang on March 18, 2026 to Sir Roy Canseco in partial fulfillment of the requirements of CS 3 of DOST PSHS-MC.
 ---
 
 # 3rd Quarter Update
