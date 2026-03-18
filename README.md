@@ -1,5 +1,42 @@
 # WDProjSodiumAbalosMalang
 
+# FINAL MODIFICATION PROPOSAL (4th Quarter Update)
+
+## Closet Verse
+
+## Two Sectence Description
+Closet Verse is a website made to unlock the full potential of your wardrobe by helping you decide what to wear. It will help match your top of choice to an ideal pair of bottoms and vice versa, suggest the perfect color combinations, and even help you generate an outfit!
+
+## Persona
+Closet Verse is designed specifically for girls around the age of 13 - 25. One of the main things a girl focuses on is what she wears. A girls clothes is a way for them to express their personality and feelings. However,  coming from experience, we usually take up to an hour (maybe even more) to pick our outfit due to reasons such as too many options, not knowing if the outfit is right for the occasion or not being sure if it matches. 
+
+## Reasons
+They would love this project because it can be used as a tool to help them match their clothes faster.  With the help of our website, girls would be able to use their clothes to maximum potential. Lastly, the random outfit generator and the color combinations page would help in giving them good and new ideas for their outfits to ensure that they aren’t too repetitive.
+
+## Available Features
+This project includes:
+- a random outfit generator (completely outfit, top only, bottom only)
+- a suggestions form and list (where you can add or delete suggestions)
+- multiple navigation tools (sliding hamburger menu and number key navigation)
+
+This project <u>doesn't CURRENTLY</u> include (but might):
+- a men's section
+- an online photobooth
+- a COMPLETE list of outfit types
+
+## License
+Proprietary/Commercial License
+
+## KHub Requirements
+The data saved in localStorage will be used to help make our website better (since it's a suggestion form).
+
+Wireframe for the suggestions page:
+![Suggestions](assets/ProposalPics/CPSugg.png)
+
+
+##### Submitted by Zy Abalos & Anica Malang on -- to Sir Roy Canseco in partial fulfillment of the requirements of CS 3 of DOST PSHS-MC.
+---
+
 # 3rd Quarter Update
 ## Final Title - Closet Pilot
 ## 2 Sectence Description
