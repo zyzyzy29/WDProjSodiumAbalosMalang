@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="icon" href="../../assets/GenPics/CPlogo.png">
-    <title>Sources</title>
-    <link rel = "stylesheet" type="text/css" href="../CSSfiles/sources.css">
+    <title>Closet Pilot</title>
+    <link rel = "stylesheet" type="text/css" href="../CSSfiles/pb.css">
     <link rel = "stylesheet" type="text/css" href="../CSSfiles/main.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="photobooth.html">
+                    <a href="photobooth.html" class="active">
                         <i class='bx  bxs-camera-alt'></i> 
                         <span>Photobooth</span>
                     </a>
@@ -69,7 +69,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="sources.html" class="active">
+                    <a href="sources.html">
                         <i class='bx  bxs-article'></i> 
                         <span>Sources</span>
                     </a>
@@ -84,37 +84,33 @@
         </div>
     </nav>
 
-        <p id = "so" >Sources</p>
+        <p id = "pb" >Photobooth</p>
     </header>
 
     <main>
-        <div>
-            <ul>
-                <li>
-                    Pinterest board with all tops and bottoms images:
-                    <a href="https://pin.it/559hT0RMZ" class="link">CS3 Project</a>
-                </li>
-                <li>
-                    Treehouse. (2023, October 6). Build a Hamburger Menu with HTML, CSS, and JavaScript | Treehouse Tips [Video]. YouTube.
-                    <a href="https://www.youtube.com/watch?v=aNDqzlAKmZc" class="link">https://www.youtube.com/watch?v=aNDqzlAKmZc</a>
-                </li>
-                <li>
-                    W3Schools.com. (n.d.).
-                    <a href="https://www.w3schools.com/html/html_responsive.asp" class="link">https://www.w3schools.com/html/html_responsive.asp</a>
-                </li>
-                <li>
-                    David G Tech. (2024, July 24). Build a Photo Booth Web App with HTML, CSS, and JavaScript | Capture & Save Photos Using JavaScript [Video]. YouTube. 
-                    <a href="https://www.youtube.com/watch?v=3p9nsawLDjw" class="link">https://www.youtube.com/watch?v=3p9nsawLDjw</a>
-                </li>
-            </ul>
+        <div class="container">
+        <video autoplay id="video"></video>
+
+        <div class="controls">
+            <label for="timer">Timer value:</label>
+            <select name="timer" id="timer">
+            <option value="10">10 seconds</option>
+            <option value="5">5 seconds</option>
+            <option value="3">3 seconds</option>
+            <option value="0" selected>0 seconds</option>
+            </select>
+
+            <button id="captureB">Capture</button>
+        </div>
+
+        <div id="photos"></div>
         </div>
     </main>
 
     <footer>
         <p> &copy; Closet Pilot 2025 | <a href="sources.html">Sources</a></p>
-        
     </footer>
-    <script src="../jsFiles/other.js"> </script>
+    <script src="../jsFiles/pb.js"> </script>
     
 </body>
 </html>

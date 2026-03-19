@@ -1,0 +1,49 @@
+.container{
+    text-align: center;
+}
+
+#video{
+    margin: 2rem;
+    border: solid 2px #11193c;
+    width: 640px;
+    height: 480px;
+}
+
+.controls{
+    margin-top: 10px;
+}
+
+.controls input{
+    padding: 5px;
+    width: 100px;
+}
+
+.controls button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#photos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photo {
+    margin: 10px;
+    position: relative;
+}
+
+.photo img {
+    width: 160px;
+    height: 120px;
+    border: solid 2px #678f9f;
+}
+
+.photo button {
+    position: absolute;
+    bottom: 5px;
+    left: 27.5%;
+    padding: 5px;
+    cursor: pointer;
+}
