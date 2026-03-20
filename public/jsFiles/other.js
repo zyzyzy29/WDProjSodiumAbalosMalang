@@ -39,6 +39,7 @@ const ham = document.querySelector('.ham');
         offScreen.classList.toggle('active');
     });
 
+//form
 function sub(event) {
     // 1. Prevents the 405 error and page reload
     event.preventDefault(); 

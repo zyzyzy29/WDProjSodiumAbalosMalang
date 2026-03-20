@@ -1,0 +1,38 @@
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #121f3c;
+}
+
+/* Navbar links */
+nav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Dela Gothic One';
+}
+
+#logo{
+    float: left; 
+    height: 3em; 
+    width: 3em; 
+    margin-left: 0.5rem;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+}
