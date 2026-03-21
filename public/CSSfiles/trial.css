@@ -2,7 +2,7 @@ nav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #121f3c;
+    background-color:  rgb(16, 56, 115);
 }
 
 /* Navbar links */
@@ -35,4 +35,41 @@ body{
 header{
     text-align: center;
     padding: 10px;
+    background-color: rgb(195, 217, 255);
+    color: black;
 }
+
+#abt{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro{
+    width: 400px;
+    height: 400px;
+    border: solid rgba(4, 28, 75, 0.69);
+    margin: 5rem;
+    border-radius: 10px;
+}
+
+.intro{
+    padding: 50px;
+    background-color: rgb(16, 56, 115);
+}
+
+.intro img{
+    width: 200px;
+    height: auto;
+}
+
+#body{
+    background-color: rgb(195, 217, 255);
+    color: white;
+}
+
+#abt h1{
+    color: rgb(12, 16, 31);
+    text-align: center;
+}
+
