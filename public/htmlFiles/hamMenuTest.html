@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="icon" href="../../assets/GenPics/CPlogo.png">
-    <title>About Us</title>
-    <link rel = "stylesheet" type="text/css" href="../CSSfiles/abtUs.css">
-    <link rel = "stylesheet" type="text/css" href="../CSSfiles/main.css">
+    <title>Color Combinations</title>
+    <link rel = "stylesheet" type="text/css" href="../CSSfiles/test.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: left; height: 3em; width: 3em; margin-left: 1rem; margin-top: 0.5rem;">
+<header>
+    <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: left; height: 3em; width: 3em">
 
-        <div class="offScreen">
+    <div class="offScreen">
             <ul class="list">
                 <li>
                     <a href="../../index.html">
@@ -51,12 +50,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="photobooth.html">
-                        <i class='bx  bxs-camera-alt'></i> 
-                        <span>Photobooth</span>
-                    </a>
-                </li>
-                <li>
                     <a href="abtUs.html" class="active">
                         <i class='bx  bxs-heart-circle'></i> 
                         <span>About Us</span>
@@ -84,38 +77,16 @@
         </div>
     </nav>
 
-    <h1 id = "au" >About Us</h1>
-    </header>
+    <p id = "cu" > Test </p>
+</header>
 
-    <main>
-        <div class="zy">
-            <img src="../../assets/GenPics/CP_zy_AU.jpg" alt="Zy Style" id="zyy">
-            <p>
-                Heyy!! I'm Zy! What I wear in a day depends on what activities I'm gonna do. 
-                On a regular day, I would wear a baby T and sweatpants, paired with my crocs. 
-                My favorite color to get for clothes would definitely be blue. 
-            </p>
-        </div>
+<script>
+    const ham = document.querySelector('.ham');
+    const offScreen = document.querySelector('.offScreen');
 
-        <div class="ani">
-            <img src="../../assets/GenPics/CP_ani_AU.jpg" alt="Anica Style" id="anii">
-            <p>
-                Haiii!! I'm Anica (or Ani)! My clothing style heavily depends on my mood.
-                If I feel lazy, I'll throw on an oversized shirt or one of my go-to crop tops and jeans.
-                I normally wear simple outfits with a shoulder bag and sneakers when I go out.
-                I put on more effort when picking an outfit when we go to an event, say out to a fancy-ish dinner, a gala, or a celebration.
-
-            </p>
-        </div>
-        
-    </main>
-
-
-    <footer>
-        <p> &copy; Closet Pilot 2025 | <a href="sources.html">Sources</a></p>
-        
-    </footer>
-    <script src="../jsFiles/other.js"> </script>
-    
-</body>
+    ham.addEventListener('click', () => {
+        ham.classList.toggle('active');
+        offScreen.classList.toggle('active');
+    });
+</script>
 </html>

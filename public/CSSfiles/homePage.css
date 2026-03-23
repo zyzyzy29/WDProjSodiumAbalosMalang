@@ -14,7 +14,7 @@ body{
 }
 
 #welcome{
-    font-family: 'Racing Sans One';
+    font-family: 'Dela Gothic One';
     font-weight: 600;
     font-size: 5em;
     color: white;
@@ -46,7 +46,7 @@ footer a:hover{
 
     padding: 30px;
     text-align: center;
-    width: 85%;
+    width: 90%;
     height: 100%;
     margin: 10px auto 0 auto;
     }
@@ -58,20 +58,9 @@ footer a:hover{
 
     padding: 30px;
     text-align: center;
-    width: 80%;
+    width: 85%;
     margin: 0 auto 10px auto;
-    }
-
-@media (max-width: 600px) {
-    
-    #main, #au, #cu {
-        display: flex;
-        flex-direction: column;
-    }
-    
 }
-
-
 
 #main a {
     margin: 10px 10px 0 5px;
@@ -80,9 +69,8 @@ footer a:hover{
 
     color: white;
     text-decoration: none;
-    font-family: 'Racing Sans One';
-    font-weight: 500;
-    font-size: 3em;
+    font-family: 'Dela Gothic One';
+    font-size: 2.5em;
 
     border: 3px solid rgba(1, 41, 101, 0.85);
     border-radius: 10px;
@@ -94,7 +82,7 @@ footer a:hover{
 
     color: white;
     text-decoration: none;
-    font-family: 'Racing Sans One';
+    font-family: 'Dela Gothic One';
     font-weight: 700;
     font-size: 2.5em;
     
@@ -103,13 +91,25 @@ footer a:hover{
 }
 
 #main a:hover {
-    color: #08024c;
     transition: 0.3s ease;
     transform: scale(1.1);
 }
 
 #misc a:hover, #misc2 a:hover {
-    color: #08024c;
     transition: 0.3s ease;
     transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+    
+    #main, #au, #cu {
+        display: flex;
+        flex-direction: column;
+        font-size: 70%;
+    }
+
+    #welcome{
+        font-size: 3.5em;
+    }
+    
 }

@@ -1,5 +1,5 @@
 #bm{
-    font-family: 'Racing Sans One';
+    font-family: 'Dela Gothic One';
     font-weight: 600;
     font-size: 5em;
     color: white;
@@ -7,7 +7,6 @@
 }
 
 main{
-    margin-left: 5rem;
     padding: 1rem 2rem;
 }
 .tCont{
@@ -70,5 +69,9 @@ button{
     .tCont{
         display: flex;
         flex-direction: column;
+    }
+
+    #bm{
+        font-size: 3.5em;
     }
 }

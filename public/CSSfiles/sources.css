@@ -1,5 +1,5 @@
 #so{
-    font-family: 'Racing Sans One';
+    font-family: 'Dela Gothic One';
     font-weight: 600;
     font-size: 5em;
     color: white;
@@ -7,7 +7,6 @@
 }
 
 main{
-    margin-left: 5rem;
     padding: 1rem 2rem;
 }
 
@@ -24,6 +23,13 @@ main div{
     font-family: 'Onest';
 }
 
-#pin{
+.link{
     color: white;
+}
+
+@media (max-width: 600px){
+    main div{
+        display: flex;
+        flex-direction: column;
+    }
 }

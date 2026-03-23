@@ -1,6 +1,5 @@
 
 .view-container {
-    margin-left: 6rem; 
     margin-top: 2rem;
     padding: 30px;
     background-color: rgba(1, 41, 101, 0.85);
@@ -11,12 +10,8 @@
     min-width: 60%;
 }
 
-.sbe .view-container {
-    margin-left: 14rem;
-}
-
 h1 {
-    font-family: 'Racing Sans One';
+    font-family: 'Dela Gothic One';
     color: #012965;
     text-align: center;
     font-size: 4em;
@@ -37,4 +32,14 @@ th {
 td {
     padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    .view-container {
+        overflow-x: auto;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        padding: 20px;
+        width: 100%;
+    }
 }

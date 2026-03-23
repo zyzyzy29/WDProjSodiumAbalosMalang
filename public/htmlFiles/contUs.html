@@ -10,21 +10,17 @@
     <link rel = "stylesheet" type="text/css" href="../CSSfiles/contUs.css">
     <link rel = "stylesheet" type="text/css" href="../CSSfiles/main.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
     <header>
-        <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: right; height: 3em; width: 3em">
-        <p id = "cu" >Contact Us</p>
-    </header>
+        <img src="../../assets/GenPics/CPlogo.png" alt="CP Logo" id="logo" style="float: left; height: 3em; width: 3em; margin-left: 1rem; margin-top: 0.5rem;">
 
-    <aside>
-        <nav>
-            <ul>
+        <div class="offScreen">
+            <ul class="list">
                 <li>
                     <a href="../../index.html">
                         <i class='bx  bxs-home-alt'></i> 
@@ -56,6 +52,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="photobooth.html">
+                        <i class='bx  bxs-camera-alt'></i> 
+                        <span>Photobooth</span>
+                    </a>
+                </li>
+                <li>
                     <a href="abtUs.html">
                         <i class='bx  bxs-heart-circle'></i> 
                         <span>About Us</span>
@@ -73,15 +75,18 @@
                         <span>Sources</span>
                     </a>
                 </li>
-                <li>
-                    <a href= "" data-r-btn>
-                        <i class='bx  bxs-arrow-right-stroke'></i> 
-                        <span>Collapse</span>
-                    </a>
-                </li>
             </ul>
-        </nav>
-    </aside>
+    </div>
+    <nav>
+        <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+        <p id = "cu" >Contact Us</p>
+    </header>
 
     <main>
          <form id="suggestionForm" onsubmit="sub(event)" onreset="return res()">
@@ -108,13 +113,15 @@
 
             <div id="buttons">
                 <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-                <a href="viewmessages.html" class="btn-style">View Signups</a>
+                <input type="reset" value="Reset"> <br> <br>
+                <a href="viewmessages.html" class="btn-style">View Suggestions</a>
             </div>
         </form>
 
+        <div id="info">
         <p>Zy Abalos b2029zdcabalos@pshs.edu.ph || discord: zyrene_bear</p><br>
         <p>Anica Malang b2029abamalang@pshs.edu.ph || discord: _abb1</p>
+        </div>
     </main>
     <footer>
         <p> &copy; Closet Pilot 2025 | <a href="sources.html">Sources</a></p>
