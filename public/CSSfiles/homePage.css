@@ -152,3 +152,17 @@ footer a:hover{
         flex: 1 1 100%; 
         }
     }
+
+    @media (max-width: 600px) {
+    
+    #links{
+        display: flex;
+        flex-direction: column;
+        font-size: 70%;
+    }
+
+    #welcome{
+        font-size: 3.5em;
+    }
+    
+}
