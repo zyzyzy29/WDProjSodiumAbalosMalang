@@ -40,7 +40,7 @@ header{
     color: #b6cfe4;
 }
 
-#abt{
+#abt {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -49,13 +49,11 @@ header{
 .intro{
     width: 400px;
     height: 400px;
-    border: solid rgba(4, 28, 75, 0.69);
+    border: solid rgba(142, 183, 232, 0.69);
     border-radius: 10px;
-}
-
-.intro{
+    margin: 0 2.5%;
     padding: 50px;
-    background-color: rgb(16, 56, 115);
+    background-color: rgba(109, 158, 198, 0.5);
 }
 
 .intro img{
@@ -64,14 +62,14 @@ header{
 }
 
 #body{
-    background-color: #e7f4ff;
+    background: #b2ddf7;
+    background: radial-gradient(circle, rgba(178, 221, 247, 1) 0%, rgba(255, 255, 255, 1) 88%);
     color: white;
     margin: 0;
 }
 
-#abt h1{
-    color: rgb(12, 16, 31);
-    text-align: center;
+#hi h1{
+    color: #6d9ec6;
 }
 
 #hero{
@@ -85,3 +83,36 @@ header{
     font-size: 2em;
 }
 
+#hi{
+    text-align: center;
+}
+
+#links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin: 10px auto 0 auto;
+}
+
+#links a{
+    margin: 10px 10px 0 5px;
+    padding: 50px;
+    background-color: rgba(109, 158, 198, 0.5);
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Dela Gothic One';
+    font-size: 2.5em;
+
+    border-radius: 10px;
+}
+
+#main{
+    text-align: center;
+}
