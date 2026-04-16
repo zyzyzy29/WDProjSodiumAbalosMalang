@@ -2,7 +2,7 @@
 
 header{
     text-align: center;
-    background-color: #012965;
+    background-color: #6d9ec6;
     height: 6%;
     place-content: center;
 }
@@ -41,11 +41,8 @@ footer a:hover{
 }
 
 body{
-    background-image: url('../../assets/GenPics/CPbg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #b2ddf7;
+    background: radial-gradient(circle, rgba(178, 221, 247, 1) 0%, rgba(255, 255, 255, 1) 88%);
 
     margin: 0;
 }
@@ -54,7 +51,7 @@ body{
 /* ham menu */
 
 .offScreen{
-    background-color: #052b64;
+    background-color: #6d9ec6;
     color: white;
     height: 100%;
     width: 100%;
@@ -79,7 +76,7 @@ nav{
     padding: 1rem;
     display: flex;
     float: right;
-    background-color: #012965;
+    background-color: #6d9ec6;
     color: white;
 }
 
@@ -126,7 +123,7 @@ nav{
 
 .list a.active, .list a:hover{
     outline: none;
-    color: #012965;
+    color: #6d9ec6;
     background-color: white;
     padding: 0.6rem 0.7rem;
     border-radius: 10px;

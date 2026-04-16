@@ -18,7 +18,7 @@ form{
     width: 100%;
     margin-left: 2rem;
     padding: 20px;
-    background-color: rgba(1, 41, 101, 0.85);
+    background-color: rgba(109, 158, 198, 0.85);
     color: white;
     border-radius: 15px;
     font-family: 'Onest';
@@ -34,7 +34,7 @@ form{
     color: white;
     margin: auto;
     padding: 30px;
-    background-color: rgba(1, 41, 101, 0.85);
+    background-color: rgba(109, 158, 198, 0.85);
     border-radius: 5px;
 }
 

@@ -23,14 +23,14 @@ main{
 .ti{
     margin: 20px 35px;
     padding: 20px;
-    background-color: rgba(1, 41, 101, 0.85);
+    background-color: rgba(109, 158, 198, 0.85);
 
     color: white;
     text-decoration: none;
     font-family: 'Onest';
     font-size: 1em;
 
-    border: 3px solid rgba(55, 81, 116, 0.85);
+    border: 3px solid rgba(109, 158, 198, 0.85);
     border-radius: 10px;
 
     place-items: center;
@@ -54,7 +54,7 @@ main{
 
 button{
     background-color:  white;
-    color: rgb(1, 41, 101);
+    color: rgb(83, 125, 159);
 
     border: none;
     border-radius: 5px;
@@ -66,10 +66,10 @@ button{
 
 [popover]{
     padding: 8px 32px;
-    color:rgb(1, 41, 101);
+    color:rgb(83, 125, 159);
     background-color: white;
     font-family: 'Onest';
-    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 8px 0 rgba(24, 47, 89, 0.2);
 
     border-radius: 10px;
 }

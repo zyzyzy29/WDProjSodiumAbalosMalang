@@ -1,8 +1,9 @@
 #pb{
-    text-align: center;
-    background-color: #012965;
-    height: 6%;
-    place-content: center;
+    font-family: 'Dela Gothic One';
+    font-weight: 600;
+    font-size: 5em;
+    color: white;
+    margin: 0;
 }
 
 .container{
@@ -11,7 +12,7 @@
 
 #video{
     margin: 2rem;
-    border: solid 2px #11193c;
+    border: solid 2px #6d9ec6;
     width: 640px;
     height: 480px;
 }

@@ -2,30 +2,31 @@
 document.addEventListener("keydown", function(event) {
     switch (event.key) {
         case "1":
-            window.location.href = "index.html";
+            window.location.href = "../../index.html";
             break;
         case "2":
-            window.location.href = "public/htmlFiles/tops.html";
+            window.location.href = "tops.html";
             break;
         case "3":
-            window.location.href = "public/htmlFiles/bottoms.html";
+            window.location.href = "bottoms.html";
             break;
         case "4":
-            window.location.href = "public/htmlFiles/colorCombi.html";
+            window.location.href = "colorCombi.html";
             break;
         case "5":
-            window.location.href = "public/htmlFiles/combi.html";
+            window.location.href = "combi.html";
             break;
         case "6":
-            window.location.href = "public/htmlFiles.photobooth.html"
+            window.location.href = "photobooth.html"
+            break;
         case "7":
-            window.location.href = "public/htmlFiles/abtUs.html";
+            window.location.href = "abtUs.html";
             break;
         case "8":
-            window.location.href = "public/htmlFiles/contUs.html";
+            window.location.href = "contUs.html";
             break;
         case "9":
-            window.location.href = "public/htmlFiles/sources.html";
+            window.location.href = "sources.html";
             break;
     }
 });

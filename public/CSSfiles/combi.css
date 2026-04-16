@@ -23,14 +23,13 @@ main{
 .blocks{
     margin: 20px 35px;
     padding: 20px;
-    background-color: rgba(1, 41, 101, 0.85);
+    background-color: rgba(109, 158, 198, 0.85);
 
     color: white;
     text-decoration: none;
     font-family: 'Onest';
     font-size: 1em;
 
-    border: 3px solid rgba(55, 81, 116, 0.85);
     border-radius: 10px;
 
     place-items: center;
@@ -40,7 +39,7 @@ button{
     padding: 10px;
     background-color: rgb(242, 243, 249);
 
-    color: rgb(1, 41, 101);
+    color: rgb(109, 158, 198);
     text-decoration: none;
     font-family: 'Onest';
     font-size: large;
@@ -52,7 +51,7 @@ select{
     padding: 10px;
     background-color: rgb(242, 243, 249);
 
-    color: rgb(1, 41, 101);
+    color: rgb(109, 158, 198);
     text-decoration: none;
     font-family: 'Onest';
     font-size: large;
