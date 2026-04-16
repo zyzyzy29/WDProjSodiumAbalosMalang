@@ -139,16 +139,16 @@ footer a:hover{
 }
 
 @media (max-width: 600px) {
-            nav a {
-                font-size: 14px;
-                padding: 5px;
-            }
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
             
-            h1 {
-                font-size: 1.5rem;
-            }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-            .intro {
-                flex: 1 1 100%; 
-            }
+    .intro {
+        flex: 1 1 100%; 
+        }
     }
