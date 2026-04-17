@@ -15,20 +15,43 @@
     border: solid 2px #6d9ec6;
     width: 640px;
     height: 480px;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
 }
 
 .controls{
     margin-top: 10px;
 }
 
-.controls input{
-    padding: 5px;
-    width: 100px;
+.controls label {
+    font-family: 'Onest';
+    color: rgb(83, 125, 159);
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#timer {
+    padding: 8px 15px;
+    color: rgb(83, 125, 159);
+    background-color: white;
+    font-family: 'Onest';
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px 0 rgba(24, 47, 89, 0.2);
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .controls button{
+    background-color: white;
+    color: rgb(83, 125, 159);
+    border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    font-family: 'Onest';
+    font-size: 0.9em;
+    box-shadow: 0 10px 8px 0 rgba(24, 47, 89, 0.2);
 }
 
 #photos{
@@ -54,4 +77,10 @@
     left: 27.5%;
     padding: 5px;
     cursor: pointer;
+    background-color: white;
+    color: rgb(83, 125, 159);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Onest';
+    font-size: 0.8em;
 }
