@@ -138,21 +138,6 @@ footer a:hover{
     color: white;
 }
 
-@media (max-width: 600px) {
-    nav a {
-        font-size: 14px;
-        padding: 5px;
-    }
-            
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .intro {
-        flex: 1 1 100%; 
-        }
-    }
-
     @media (max-width: 600px) {
     
     #links{
@@ -164,5 +149,18 @@ footer a:hover{
     #welcome{
         font-size: 3.5em;
     }
+
+        nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+            
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        flex: 1 1 100%; 
+        }
     
 }
