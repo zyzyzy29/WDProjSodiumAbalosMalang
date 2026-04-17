@@ -66,30 +66,30 @@ function takePhoto(){
 document.addEventListener("keydown", function(event) {
     switch (event.key) {
         case "1":
-            window.location.href = "index.html";
+            window.location.href = "../../index.html";
             break;
         case "2":
-            window.location.href = "public/htmlFiles/tops.html";
+            window.location.href = "tops.html";
             break;
         case "3":
-            window.location.href = "public/htmlFiles/bottoms.html";
+            window.location.href = "bottoms.html";
             break;
         case "4":
-            window.location.href = "public/htmlFiles/colorCombi.html";
+            window.location.href = "colorCombi.html";
             break;
         case "5":
-            window.location.href = "public/htmlFiles/combi.html";
+            window.location.href = "combi.html";
             break;
         case "6":
-            window.location.href = "public/htmlFiles.photobooth.html"
+            window.location.href = "photobooth.html"
         case "7":
-            window.location.href = "public/htmlFiles/abtUs.html";
+            window.location.href = "abtUs.html";
             break;
         case "8":
-            window.location.href = "public/htmlFiles/contUs.html";
+            window.location.href = "contUs.html";
             break;
         case "9":
-            window.location.href = "public/htmlFiles/sources.html";
+            window.location.href = "sources.html";
             break;
     }
 });
@@ -102,33 +102,3 @@ const ham = document.querySelector('.ham');
         ham.classList.toggle('active');
         offScreen.classList.toggle('active');
     });
-
-function sub(event) {
-    // 1. Prevents the 405 error and page reload
-    event.preventDefault(); 
-
-    // 2. Confirmation dialog
-    if(!confirm('Confirm submission?')){
-        return false;
-    }
-
-    // 3. Get values (Make sure these IDs match your HTML exactly)
-    const newSuggestion = {
-        fullName: document.getElementById('fname').value,
-        discord: document.getElementById('dc').value || "N/A",
-        email: document.getElementById('em').value || "N/A",
-        subject: document.getElementById('sbj').value,
-        message: document.getElementById('m').value,
-        date: new Date().toLocaleDateString()
-    };
-
-    // 4. Save logic
-    let suggestions = JSON.parse(localStorage.getItem('suggestionsData')) || [];
-    suggestions.push(newSuggestion);
-    localStorage.setItem('suggestionsData', JSON.stringify(suggestions));
-
-    alert("Suggestion Saved!");
-    
-    // 5. Reset form and stay on page
-    document.getElementById('suggestionForm').reset();
-}
