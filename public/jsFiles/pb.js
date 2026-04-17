@@ -36,11 +36,15 @@ function takePhoto(){
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
 
-    //get the image from the video and convert to png
-    context.drawImage(video, 0, 0, canvas.width, canvas.height);
-    var dataURL = canvas.toDataURL('img/jpeg');
+   
+    context.save(); 
+    context.scale(-1, 1); 
+    context.drawImage(video, -canvas.width, 0, canvas.width, canvas.height); 
+    context.restore(); 
+    
 
-    //create pics list
+    var dataURL = canvas.toDataURL('image/jpeg');
+
     var photoD = document.createElement('div');
     photoD.classList.add('photo');
 
@@ -48,7 +52,6 @@ function takePhoto(){
     img.src = dataURL;
     photoD.appendChild(img);
 
-    //let ppl download img
     var downloadB = document.createElement('button');
     downloadB.textContent = 'Download';
     downloadB.addEventListener('click', () => {
